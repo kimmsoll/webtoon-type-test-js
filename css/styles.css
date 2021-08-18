@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import './mediaquery/big-screen.css';
+@import './mediaquery/medium-screen.css';
+@import './mediaquery/small-screen.css';
+
+:root {
+  --radius: 0.7rem;
+  --orange: rgba(255, 166, 0, 0.7);
+  --lightpurple: rgb(236, 213, 255);
+}
+
+body,
+#q--first,
+#q--second,
+#q--final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#q--second,
+#q--final {
+  display: none;
+}
+
+#result__image {
+  animation: appear 2s forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(1em);
+    box-shadow: 2em -1em royalblue;
+  }
+  to {
+    opacity: 1;
+    box-shadow: 0.8em 0.8em tomato;
+  }
+}
