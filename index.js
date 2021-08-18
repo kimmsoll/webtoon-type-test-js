@@ -30,7 +30,7 @@ const onClick = (e) => {
         secondQ.style.display = "none";
         finalQ.style.display = "flex";
     } else if (result.length === 3) {
-        location.replace("http://127.0.0.1:5500/result.html");
+        location.replace("https://webtoon-type-test.netlify.app/result.html");
     }
 };
 
@@ -47,11 +47,11 @@ const goToWatchWebtoon = (num) => {
     });
 };
 
-if(location.href === "http://127.0.0.1:5500/index.html"){
+if(location.href === "https://webtoon-type-test.netlify.app/"){
     setInterval(()=>randomStartImg(),50);
 }
 
-if(location.href === "http://127.0.0.1:5500/result.html"){
+if(location.href === "https://webtoon-type-test.netlify.app/result.html"){
     let resultNum = localStorage.getItem("key").split(",");
     resultNum = resultNum.reduce((pre,cur)=>pre+cur);
     showResult(resultNum);
