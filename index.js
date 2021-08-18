@@ -47,7 +47,7 @@ const goToWatchWebtoon = (num) => {
     });
 };
 
-if(location.href === "http://127.0.0.1:5500/start.html"){
+if(location.href === "http://127.0.0.1:5500/index.html"){
     setInterval(()=>randomStartImg(),50);
 }
 
