@@ -63,19 +63,20 @@
     justify-content: center;
   }
   #start__img {
+    width: 20em;
+    height: 15em;
+    padding: 1rem;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin-bottom: 1em;
-    background-color: white;
     border-radius: var(--radius);
   }
-  #start__img > img {
-    width: 20em;
-    height: 15em;
-    border-radius: var(--radius);
+  #start__img > i {
+    font-size: 4.5rem;
   }
   #start__btn {
     width: 80%;

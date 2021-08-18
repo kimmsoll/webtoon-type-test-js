@@ -25,6 +25,25 @@ body,
   display: none;
 }
 
+.fas {
+  animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+  10% {
+    transform: scale3d(0.5, 0.5, 0.5);
+    color: seagreen;
+  }
+  50% {
+    transform: scale3d(1.5, 1.8, 1);
+    color: royalblue;
+  }
+  100% {
+    transform: scale3d(1.5, 1.5, 1.5);
+    color: salmon;
+  }
+}
+
 #result__image {
   animation: appear 2s forwards;
 }
